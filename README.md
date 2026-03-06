@@ -1,2 +1,3 @@
 # Networking
-Google Cloud Networking Script Samples
+This Repository contains some sample Networking scripts
+Be sure to review/understand the scripts before using
