@@ -38,7 +38,7 @@ for REGION in $REGIONLIST; do
   SUBNETNUMBER=$((SUBNETNUMBER + 1))
 done
 
-# This allows Internal VMs (so VMs with addresses beginning 10.80) to communicate
+# This allows Internal VMs (VMs with addresses beginning with $BASEIP) to communicate
 gcloud compute firewall-rules create $NETWORKNAME-allowinternaltraffic \
     --network=$NETWORKNAME \
     --priority=65534 \
